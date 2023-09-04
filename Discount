@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+public class Discount {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Enter the original price: P");
+		int originalPrice = sc.nextInt();
+		System.out.print("Enter the discount rate: ");
+		int discountRate = sc.nextInt();
+
+		int discount = originalPrice * discountRate / 100;
+		int salePrice = originalPrice - discount;
+		System.out.println("The discount is " + discount+ "%");
+		System.out.println("The sale price is " +"P" +salePrice);
+		
+		sc.close();
+	}
+}
